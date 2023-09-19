@@ -1,0 +1,114 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 1em;
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin: 1em 0;
+
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    margin-bottom: 3em;
+}
+
+.car {
+    padding: 3em;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.btn {
+    padding: 1em 2em;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2em;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sedan .btn {
+    color: hsl(31, 77%, 52%);;
+}
+
+.suv .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover,
+.btn:focus {
+    border: 2px solid;
+    border-color: hsl(0, 0%, 95%);
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 1440px) {
+    .container {
+        flex-direction: row;
+        max-width: 900px;
+        margin-top: 150px;
+    }
+
+    p{
+        margin-bottom: 6em;
+    }
+
+    .sedan {
+    border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .luxury {
+    border-radius: 0 0.5em 0.5em 0;
+    }
+}
